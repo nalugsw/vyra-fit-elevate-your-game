@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-black tracking-tighter text-foreground md:text-3xl">
+          <span className="font-display text-2xl font-black tracking-tighter text-gradient md:text-3xl">
             VYRA FIT
           </span>
         </Link>
@@ -109,7 +109,7 @@ const Navbar = () => {
             <SheetContent side="right" className="w-80">
               <div className="flex flex-col gap-6 pt-8">
                 <Link to="/" className="flex items-center justify-center">
-                  <span className="font-display text-2xl font-black tracking-tighter text-foreground">
+                  <span className="font-display text-2xl font-black tracking-tighter text-gradient">
                     VYRA FIT
                   </span>
                 </Link>
