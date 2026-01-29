@@ -144,7 +144,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container flex flex-col items-center justify-between gap-4 py-6 text-center text-sm text-primary-foreground/50 md:flex-row md:text-left">
-          <p>© 2025 VYRA FIT. Todos os direitos reservados.</p>
+          <p>© 2026 VYRA FIT. Todos os direitos reservados.</p>
           <p className="font-semibold">Vista sua força. Supere seus limites.</p>
         </div>
       </div>

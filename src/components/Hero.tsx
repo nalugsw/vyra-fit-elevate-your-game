@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="max-w-3xl animate-slide-up">
           {/* Badge */}
           <span className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-primary-foreground backdrop-blur-sm">
-            Nova Coleção 2025
+            Nova Coleção 2026
           </span>
 
           {/* Title */}
@@ -42,7 +42,7 @@ const Hero = () => {
           {/* CTAs */}
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/produtos/feminino" className="gap-2">
+              <Link to="/produtos" className="gap-2">
                 Ver Coleção
                 <ArrowRight className="h-5 w-5" />
               </Link>
