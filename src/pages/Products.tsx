@@ -17,6 +17,7 @@ const categoryTitles: Record<string, { title: string; subtitle: string }> = {
   feminino: { title: "Feminino", subtitle: "Performance & Estilo" },
   masculino: { title: "Masculino", subtitle: "Força & Atitude" },
   suplementos: { title: "Suplementos", subtitle: "Nutrição & Energia" },
+  lancamentos: { title: "Lançamentos", subtitle: "Novidades da Coleção" },
 };
 
 const Products = () => {
@@ -24,10 +25,12 @@ const Products = () => {
   const [sortBy, setSortBy] = useState("featured");
 
   const filteredProducts = category
-    ? getProductsByCategory(category)
+    ? category === "lancamentos"
+      ? products.filter((p) => p.isNew)
+      : getProductsByCategory(category)
     : products;
 
-  const categoryInfo = category
+  const categoryInfo = category && categoryTitles[category]
     ? categoryTitles[category]
     : { title: "Todos os Produtos", subtitle: "Coleção Completa" };
 
